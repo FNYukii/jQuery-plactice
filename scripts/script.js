@@ -56,5 +56,10 @@ $(function(){
     }
   });
 
+  $('.img').click(function(){
+    $('.img').removeClass('green-img');
+    $(this).addClass('green-img');
+  });
+
 
 });
