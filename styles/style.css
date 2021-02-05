@@ -41,7 +41,7 @@ header .global-nav-item {
   list-style: none;
   opacity: 0.8;
 }
-header .global-nav-item:hover {
+header .global-nav-item a:hover {
   text-decoration: underline;
   opacity: 1;
 }
