@@ -61,6 +61,9 @@ header .fa-bars:hover {
 .welcome-wrapper {
   padding-top: 30px;
 }
+h1, p {
+  color: #777;
+}
 
 
 /* image-wrapper */
