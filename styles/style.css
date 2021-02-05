@@ -36,6 +36,7 @@ header .global-nav {
 header .global-nav-item {
   margin: 0 30px;
   height: 50px;
+  font-size: 16px;
   line-height: 50px;
   list-style: none;
   opacity: 0.8;
@@ -46,6 +47,7 @@ header .global-nav-item:hover {
 }
 header .fa-bars {
   float: right;
+  margin-right: 30px;
   color: white;
   font-size: 25px;
   line-height: 50px;
