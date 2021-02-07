@@ -53,5 +53,20 @@ $(function(){
     }, 500);
   });
 
+  let isGreenSquare = true;
+  $('#green-radius-toggle').click(function(){
+    if(isGreenSquare){
+      $('.green-img').animate({
+        'border-radius':'50%'
+      }, 500);
+      isGreenSquare = false;
+    }else{
+      $('.green-img').animate({
+        'border-radius':'0%'
+      }, 500);
+      isGreenSquare = true;
+    }
+  });
+
 
 });
