@@ -10,12 +10,8 @@ $(function(){
     $('.green-img').fadeIn();
   });
   
-  $('#image1-slidedown').click(function(){
-    $('.green-img').slideDown();
-  });
-
-  $('#image1-slideup').click(function(){
-    $('.green-img').slideUp();
+  $('#image1-slide-toggle').click(function(){
+    $('.green-img').slideToggle();
   });
 
 
