@@ -59,88 +59,20 @@ header .fa-bars:hover {
 }
 
 
-/* Welcome-wrapper */
-.welcome-wrapper {
-  padding-top: 30px;
+/* Media Query */
+@media (max-width: 900px){
+  .container {
+    width: 100%;
+  }
 }
-h1, p {
-  color: #777;
-}
-
-
-/* image-wrapper */
-.image-wrapper {
-  padding-top: 30px;
-}
-.image-wrapper .images {
-  display: flex;
-  flex-wrap: wrap;
-}
-.img {
-  width: 130px;
-  height: 130px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-color: skyblue;
-  opacity: 0.8;
-  text-align: center;
-  line-height: 130px;
-  color: white;
-  font-size: 25px;
-  cursor: pointer;
-}
-.img:hover {
-  opacity: 1;
-}
-.img:active {
-  transform: scale(0.95);
-}
-
-
-/* Button-wrapper */
-.button-wrapper {
-  padding-top: 30px;
-}
-.button-wrapper .buttons {
-  margin: 10px 0;
-  display: flex;
-}
-.btn {
-  width: 100px;
-  height: 40px;
-  margin-right: 20px;
-  background-color: skyblue;
-  color: white;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 10px;
-  opacity: 0.7;
-  cursor: pointer;
-}
-.btn:hover {
-  opacity: 1;
-}
-.btn:active {
-  transform: scale(0.95);
-}
-
-
-/* info-wrapper */
-.info-wrapper {
-  padding-top: 30px;
-}
-
-
-/* 色や形などのスタイル */
-.selected-img {
-  background-color: #42b942;
-}
-.green {
-  background-color: #42b942;
-}
-.orange {
-  background-color: orange;
-}
-.tomato {
-  background-color: tomato;
+@media (max-width: 640px){
+  .container {
+    width: 100%;
+  }
+  header .global-nav {
+    display: none;
+  }
+  header .fa-bars {
+    display: block;
+  }
 }
