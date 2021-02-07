@@ -78,6 +78,22 @@ $(function(){
     });
   });
 
+  // the button move to right
+  let isMoved = false;
+  $('#button-move').click(function(){
+    if(isMoved){
+      $(this).animate({
+        "margin-left": 0
+      });
+      isMoved = false;
+    }else{
+      $(this).animate({
+        "margin-left": "120px"
+      });
+      isMoved = true;
+    }
+  });
+
 
   // show mouse pointer position
   $(window).mousemove(function(e){
