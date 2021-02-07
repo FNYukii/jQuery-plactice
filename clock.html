@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Clock</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/clock.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
@@ -20,7 +20,31 @@
       </div>
     </header>
     <main>
+      <div class="clocks-wrapper">
+        <div class="container">
 
+          <!-- Normal Clock -->
+          <div class="circle normal-clock">
+            <p>Clock</p>
+          </div>
+
+          <div class="timer-and-stopwatch">
+
+            <!-- Timer -->
+            <div class="timer circle">
+              <p>Timer</p>
+            </div>
+
+            <!-- Stopwatch -->
+            <div class="stopwatch circle">
+              <p>Stopwatch</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts/clock.js"></script>
   </body>
 </html>

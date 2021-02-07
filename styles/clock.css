@@ -1,0 +1,24 @@
+.clocks-wrapper {
+  margin-top: 50px;
+}
+.circle {
+  width: 270px;
+  height: 270px;
+  border: 3px solid #aaa;
+  border-radius: 50%;
+  color: #aaa;
+  text-align: center;
+  line-height: 270px;
+  font-size: 50px;
+}
+.normal-clock {
+  margin: 50px auto;
+}
+.timer-and-stopwatch {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.timer, .stopwatch {
+  margin: 50px auto;
+}
