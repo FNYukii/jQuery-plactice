@@ -53,17 +53,20 @@ $(function(){
     }, 500);
   });
 
+  // switch border-radius
   let isGreenSquare = true;
   $('#green-radius-toggle').click(function(){
     if(isGreenSquare){
       $('.green-img').animate({
         'border-radius':'50%'
       }, 500);
+      $(this).html('<i class="far fa-circle"></i>');
       isGreenSquare = false;
     }else{
       $('.green-img').animate({
         'border-radius':'0%'
       }, 500);
+      $(this).html('<i class="far fa-square"></i>');
       isGreenSquare = true;
     }
   });
