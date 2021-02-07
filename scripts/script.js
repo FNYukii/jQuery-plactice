@@ -34,6 +34,10 @@ $(function(){
   // add a img
   $('#add-img').click(function(){
     $('.images').append("<div class='img'>" + $(".img").length + "</div>");
+    $('.img').click(function(){
+      $('.img').removeClass('selected-img');
+      $(this).addClass('selected-img');
+    });
   });
 
   
