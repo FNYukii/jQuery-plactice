@@ -3,32 +3,32 @@ $(function(){
   
   // select previus img
   $('#green-left').click(function(){
-    let $greenImg = $('.green-img');
+    let $greenImg = $('.selected-img');
     let greenIndex = $('.img').index($greenImg);
-    $greenImg.removeClass('green-img');
+    $greenImg.removeClass('selected-img');
     if(greenIndex != 0){
-      $greenImg.prev().addClass('green-img');
+      $greenImg.prev().addClass('selected-img');
     }else{
-      $('.img').eq($('.img').length - 1).addClass('green-img');
+      $('.img').eq($('.img').length - 1).addClass('selected-img');
     }
   });
 
   // select next img
   $('#green-right').click(function(){
-    let $greenImg = $('.green-img');
+    let $greenImg = $('.selected-img');
     let greenIndex = $('.img').index($greenImg);
-    $greenImg.removeClass('green-img');
+    $greenImg.removeClass('selected-img');
     if(greenIndex != $('.img').length -1){
-      $greenImg.next().addClass('green-img');
+      $greenImg.next().addClass('selected-img');
     }else{
-      $('.img').eq(0).addClass('green-img');
+      $('.img').eq(0).addClass('selected-img');
     }
   });
 
   // select clicked img
   $('.img').click(function(){
-    $('.img').removeClass('green-img');
-    $(this).addClass('green-img');
+    $('.img').removeClass('selected-img');
+    $(this).addClass('selected-img');
   });
 
   // add a img
@@ -39,12 +39,12 @@ $(function(){
   
   // switch between fadein and fadeout
   $('#green-fade-toggle').click(function(){
-    $('.green-img').fadeToggle();
+    $('.selected-img').fadeToggle();
   });
   
   // switch between slidedown and slideup
   $('#green-slide-toggle').click(function(){
-    $('.green-img').slideToggle();
+    $('.selected-img').slideToggle();
   });
 
 
@@ -52,13 +52,13 @@ $(function(){
   let isGreenSquare = true;
   $('#green-radius-toggle').click(function(){
     if(isGreenSquare){
-      $('.green-img').animate({
+      $('.selected-img').animate({
         'border-radius':'50%'
       }, 500);
       $(this).html('<i class="far fa-circle"></i>');
       isGreenSquare = false;
     }else{
-      $('.green-img').animate({
+      $('.selected-img').animate({
         'border-radius':'0%'
       }, 500);
       $(this).html('<i class="far fa-square"></i>');
