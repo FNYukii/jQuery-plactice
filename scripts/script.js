@@ -30,13 +30,9 @@ $(function(){
   });
 
   
-  // fade and slide
-  $('#image1-fadeout').click(function(){
-    $('.green-img').fadeOut();
-  });
-
-  $('#image1-fadein').click(function(){
-    $('.green-img').fadeIn();
+  // fade and slide to toggle
+  $('#image1-fade-toggle').click(function(){
+    $('.green-img').fadeToggle();
   });
   
   $('#image1-slide-toggle').click(function(){
