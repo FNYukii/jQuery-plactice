@@ -71,6 +71,14 @@ $(function(){
   });
 
 
+  // scroll to page top
+  $('#scroll-top').click(function(){
+    $('html, body').animate({
+      scrollTop: 0
+    });
+  });
+
+
   // show mouse pointer position
   $(window).mousemove(function(e){
     $('.mouse-x').html('X: ' +  e.pageX + ' px');
