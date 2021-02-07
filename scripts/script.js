@@ -2,7 +2,7 @@ $(function(){
 
   
   // select previus img
-  $('#green-left').click(function(){
+  $('#select-prev').click(function(){
     let $greenImg = $('.selected-img');
     let greenIndex = $('.img').index($greenImg);
     $greenImg.removeClass('selected-img');
@@ -14,7 +14,7 @@ $(function(){
   });
 
   // select next img
-  $('#green-right').click(function(){
+  $('#select-next').click(function(){
     let $greenImg = $('.selected-img');
     let greenIndex = $('.img').index($greenImg);
     $greenImg.removeClass('selected-img');
@@ -42,19 +42,19 @@ $(function(){
 
   
   // switch between fadein and fadeout
-  $('#green-fade-toggle').click(function(){
+  $('#fade-toggle').click(function(){
     $('.selected-img').fadeToggle();
   });
   
   // switch between slidedown and slideup
-  $('#green-slide-toggle').click(function(){
+  $('#slide-toggle').click(function(){
     $('.selected-img').slideToggle();
   });
 
 
   // switch border-radius
   let isGreenSquare = true;
-  $('#green-radius-toggle').click(function(){
+  $('#radius-toggle').click(function(){
     if(isGreenSquare){
       $('.selected-img').animate({
         'border-radius':'50%'
