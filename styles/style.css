@@ -125,6 +125,12 @@ h1, p {
 }
 
 
+/* info-wrapper */
+.info-wrapper {
+  padding-top: 30px;
+}
+
+
 /* 色や形などのスタイル */
 .selected-img {
   background-color: #42b942;

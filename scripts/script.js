@@ -67,4 +67,11 @@ $(function(){
   });
 
 
+  // show mouse pointer position
+  $(window).mousemove(function(e){
+    $('.mouse-x').html('X: ' +  e.pageX + ' px');
+    $('.mouse-y').html('Y: ' +  e.pageY + ' px');
+  }); 
+
+
 });
