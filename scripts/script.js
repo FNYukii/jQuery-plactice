@@ -31,11 +31,11 @@ $(function(){
 
   
   // fade and slide to toggle
-  $('#image1-fade-toggle').click(function(){
+  $('#green-fade-toggle').click(function(){
     $('.green-img').fadeToggle();
   });
   
-  $('#image1-slide-toggle').click(function(){
+  $('#green-slide-toggle').click(function(){
     $('.green-img').slideToggle();
   });
 
