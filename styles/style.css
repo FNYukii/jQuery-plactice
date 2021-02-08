@@ -21,11 +21,9 @@ header {
   background-color: skyblue;
   height: 50px;
 }
-header a {
+header .logo {
   text-decoration: none;
   color: white;
-}
-header .logo {
   font-size: 40px;
   font-family: fantasy;
 }
@@ -33,19 +31,26 @@ header .global-nav {
   float: right;
   display: flex;
 }
-header .global-nav-item {
-  margin: 0 30px;
+header .global-nav li {
+  width: 100px;
   height: 50px;
-  font-size: 16px;
-  line-height: 50px;
   list-style: none;
-  opacity: 0.8;
 }
-header .global-nav-item a:hover {
-  text-decoration: underline;
-  opacity: 1;
+header .global-nav li a {
+  display: block;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
 }
-header .fa-bars {
+header .global-nav li a:hover {
+  background-color: #90dfff;
+}
+header .menu-bars {
   float: right;
   margin-right: 30px;
   color: white;
@@ -54,10 +59,38 @@ header .fa-bars {
   opacity: 0.8;
   display: none;
 }
-header .fa-bars:hover {
+header .menu-bars:hover {
   opacity: 1;
 }
+header .menu-bars:active {
+  transform: scale(0.9);
+}
 
+
+/* global-nav in the menu-bar */
+.bars-global-nav {
+  display: none;
+}
+.bars-global-nav li {
+  list-style: none;
+}
+.bars-global-nav li a {
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  border-top: 1px solid white;
+  background-color: skyblue;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.bars-global-nav li:hover {
+  opacity: 0.8;
+}
 
 /* Media Query */
 @media (max-width: 900px){
@@ -72,7 +105,7 @@ header .fa-bars:hover {
   header .global-nav {
     display: none;
   }
-  header .fa-bars {
+  header .menu-bars {
     display: block;
   }
 }
