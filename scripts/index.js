@@ -71,13 +71,6 @@ $(function(){
   });
 
 
-  // scroll to page top
-  $('#scroll-top').click(function(){
-    $('html, body').animate({
-      scrollTop: 0
-    });
-  });
-
   // the button move to right
   let isMoved = false;
   $('#button-move').click(function(){
@@ -92,6 +85,21 @@ $(function(){
       });
       isMoved = true;
     }
+  });
+
+  // scroll to page top
+  $('#scroll-top').click(function(){
+    $('html, body').animate({
+      scrollTop: 0
+    });
+  });
+
+  // Open and close modal window
+  $('#open-modal').click(function(){
+    $('.modal-wrapper').fadeIn();
+  });
+  $('#close-modal').click(function(){
+    $('.modal-wrapper').fadeOut();
   });
 
 
